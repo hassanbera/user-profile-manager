@@ -1,0 +1,31 @@
+<div>
+    <h2>User Profile</h2>
+    <p><strong>Name:</strong>{{user.getName()}}</p>
+    <p><strong>Email:</strong>{{user.getEmail()}}</p>
+    <p><strong>Age:</strong>{{user.getAge()}}</p>
+
+    <h3>Update Profile</h3>
+    <form>
+        <label>
+            Name:
+            <input type="text" #nameInput/>
+        </label>
+        <button type="button" (click)="updateName(nameInput.value)">Update Name</button>
+    
+        
+            <label>
+                Email:
+                <input type="email" #emailInput/>
+            </label>
+            <button type="button" (click)="updateEmail(emailInput.value)">Update Name</button>
+        
+            <label>
+                Age:
+                <input type="number" #ageInput />
+              </label>
+              <button type="button" (click)="updateAge(ageInput.value)">Update Age</button>
+
+
+    </form>
+
+</div>
